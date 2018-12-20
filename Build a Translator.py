@@ -27,3 +27,18 @@ def translate(phrase):
     return translation
 
 print(translate(input("Enter a phrase: "))) # Create a starting phrase for people to enter their phrase to be translated
+
+try:
+    number = int(input("Enter a number: "))
+    print(number)
+except:
+    print("Invalid Input")
+
+
+try:
+    number = int(input("Enter a number: "))
+    print(number)
+except ZeroDivisionError:
+    print("Invalid Input")
+except ValueError:
+    print("Invalid Value")
