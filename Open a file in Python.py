@@ -23,6 +23,25 @@ print(Indexfile.readlines()[1:2])
 for Country in Indexfile.readlines():
     print(Country)
 
+Indexfile = open("RankingLists.txt", "a") # open file in append mode, so you can add new data
+Indexfile.write("\nBrazil	2016	94	73	95	-14.235004	-51.92528") # Add a new line to the dataset use \n
+                                                                        # to add an enter
+
+Indexfile = open("RankingLists.txt", "w") # open file in write mode, so you can overwrite
+Indexfile.write("\nBrazil	2016	94	73	95	-14.235004	-51.92528") # Now the added line will replace all
+                                                                        # the other data
+
+Indexfile = open("RankingLists_copy.txt", "w") # By changing the file text name, you can make a copy of your file
+
+
+## This way you can also create an HTML file:
+webpage = open("Test.html", "w")
+webpage.write("<p>TestPage</p>")
+
+
+
+
+
 Indexfile.close()
 
 
