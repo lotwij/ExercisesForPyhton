@@ -1,3 +1,4 @@
+# Create some tools you want to use in other folders
 import random
 
 feet_in_mile = 5280
