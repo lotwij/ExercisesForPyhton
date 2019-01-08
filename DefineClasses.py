@@ -7,5 +7,3 @@ class pet_animal:
         self.temperament = temperament
         self.trained = trained
 
-Jacky = pet_animal("Jacky", "dog", 15, "Fierce", True)
-print(Jacky.age)
